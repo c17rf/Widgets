@@ -6,7 +6,9 @@ class WeatherScraper
 
 	def initialize
 		html = open("http://www.accuweather.com/en/us/new-york-ny/10017/weather-forecast/349727")
+		html1 = open("http://www.thefuckingweather.com/?where=10001")
 		@nokogiri = Nokogiri::HTML(html)
+		@nokogiri1 = Nokogiri::HTML(html1)
 	end
 
 	# def temp
@@ -29,10 +31,8 @@ class WeatherScraper
 	end
 
 	def temp_lo
-		puts @nokogiri
-	 	@temp_lo = @nokogiri.css('span.low')
-	 	puts @temp_lo
-	 	"#{@temp_lo}" 
+	 	@temp_lo = @nokogiri1.css('.lowRow td')[0].text
+	 	"#{@temp_lo}˚"
 	end
 
 end 
