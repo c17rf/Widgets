@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+.container {
+	max-width: 285px;
+	max-height: 259px;
+	background-image: url("http://www.egvpl.org/images/kids_www_weather.png");
+}
+
+table, th, td {
+			    border: 1px solid black;
+			    border-collapse: collapse;
+			}
+			th, td {
+			    padding: 5px;
+			    text-align: left;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 20px;
+				
+			}

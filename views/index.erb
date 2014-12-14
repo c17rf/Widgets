@@ -1,20 +1,43 @@
 <!doctype>
 <html>
 	<head>
-		<link style = "text/css"; rel = "stylesheet"; href = "stylesheet.css"/>
+		<link style = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
 		<title>
 			Weather
 		</title>
 	</head>
 	<body>
-			
+
+		<div class="container">
+			<style>
+			/*table, th, td {
+			    border: 1px solid black;
+			    border-collapse: collapse;
+			}
+			th, td {
+			    padding: 5px;
+			    text-align: left;
+			}*/
+			</style>
 
 
+			<h2>Today's Weather :</h2>
 
-		<%= @temp %>
-		<%= @temp_hi %>
-		<%= @temp_lo %>
-
+			<table style="width:100%" >
+	  		<tr>
+	    		<th><strong>Current Temp and Condition:</strong></th>
+	    		<td><%= @temp %></td>
+	  		</tr>
+	  		<tr>
+	    		<th><strong>Today's Hi:</strong></th>
+	    		<td><%= @temp_hi %></td>
+	  		</tr>
+			  <tr>
+			    <th><strong>Today's Lo:</strong></th>
+			    <td><%= @temp_lo %></td>
+			  </tr>
+			</table>
 		</div>
+
 	</body>
 </html>
