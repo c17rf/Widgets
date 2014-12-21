@@ -2,6 +2,7 @@ require 'bundler'
 Bundler.require
 require_relative './models/weather_scraper.rb'
 require_relative './models/cnn-headline-scraper.rb'
+require_relative './models/sports_scraper.rb'
 
 class MyApp < Sinatra::Base
 
@@ -15,7 +16,13 @@ class MyApp < Sinatra::Base
 	
 	scrape = Headlinescraper.new
     	@fixed_headlines = scrape.fixed_headlines
+
+  sportsscrape=Sportsheadlines.new
+    @sportsscrape=sportsscrape.parts
+
     erb :index
   end
+
+
 
 end

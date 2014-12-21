@@ -52,13 +52,16 @@
 		    	</div>
 		    </div>
 
-		    <!-- <div class="item">
-		      <img src="http://placehold.it/1200x315" alt="...">
-		      <div class="carousel-caption">
-		      	<h3>Caption Text</h3>
-		      </div>
+		    <div class="item">
+		    	<div class="titlebox center-block">
+		    		<h2>Sports Headlines :</h2>
+		    	</div>
+		    <div class="headlinebox center-block">
+		      <% @sportsscrape.each do |h|%>
+			  	  <p><%= h%></p>
+			   	 <% end %> 
 		    </div>
-		  </div> -->
+		  </div>
 
 		  <!-- Controls -->
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
