@@ -1,6 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
 
+.about_container {
+
+	max-width: 400px;
+
+}
+
+#sport_section {
+	background-image: "http://a1.espncdn.com/prod/assets/bg_v2/bg_frontpage_elements.jpg";
+}
+
 #widget_carousel {
 	width: 285px;
 	margin-left: auto;
@@ -8,7 +18,7 @@
 }
 
 #weather_section{
-	max-width: 285px;
+	width: 285px;
 	max-height: 500px;
 	background-image: url("http://www.egvpl.org/images/kids_www_weather.png");
 	background-repeat: no-repeat;
@@ -33,11 +43,11 @@ table, th, td {
 	background-color: #990000;
 	color:#CCCCCC;
   border: 2px solid #990000 ;
-  max-width: 285px;
+  width: 285px;
   font-family: 'Josefin Sans', sans-serif;
 }
 .headlinebox {
-	 max-width: 285px;
+	 width: 285px;
 	 max-height: 650px;
 	 border: 2px solid #990000;
 			}
