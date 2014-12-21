@@ -38,11 +38,21 @@
 			  </tr>
 			</table>
 		</div>
+		</body>
 
+		<body>
+		<div class="titlebox">
+		<h2>Today's Headlines :</h2>
+		</div>
 
+		<div class="headlinebox">
     <% @fixed_headlines.each do |h| %>
     <p><%= h%></p>
-    <% end %>
-  
-	</body>
+    <% end %> 
+    <a href ="@fixed_headlines[0]"></a>
+    </div>
+		
+		</body>
+
+
 </html>

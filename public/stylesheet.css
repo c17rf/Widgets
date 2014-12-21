@@ -2,7 +2,7 @@
 
 .container {
 	max-width: 285px;
-	max-height: 259px;
+	max-height: 500px;
 	background-image: url("http://www.egvpl.org/images/kids_www_weather.png");
 }
 
@@ -17,3 +17,21 @@ table, th, td {
 				font-size: 20px;
 				
 			}
+
+.titlebox {
+	background-color: #990000;
+	color:#CCCCCC;
+  border: 2px solid #990000 ;
+  max-width: 285px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.headlinebox {
+
+	 max-width: 285px;
+	 max-height: 650px;
+	 border: 2px solid #990000;
+
+
+}

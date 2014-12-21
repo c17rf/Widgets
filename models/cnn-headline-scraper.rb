@@ -19,7 +19,7 @@ class Headlinescraper
         headline.strip
       end
      end
-   @fixed_headlines
+   @fixed_headlines.first(10)
   end 
 
 end
